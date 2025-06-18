@@ -1,0 +1,349 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Noto Sans", sans-serif;
+}
+nav{
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 0px 140px;
+    /* width: 70%;
+    margin: auto; */
+    justify-content: space-between;
+}
+.navlinks{
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+    font-family: "Noto Sans", sans-serif;
+    width: 400px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navlinks a{
+    text-decoration: none;
+    color: #000;
+}
+.navlinks a:hover{
+    color: #808080;
+}
+.FormSection{
+    height: 70vh;
+    background-color: #000;
+    background-image: url('./66e1052cdca1e68cc52d070e8c9631aa_1736774712641.png');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.FormSection h1{
+    font-size: 48px;
+    color: #333333;
+}
+.imp{
+    height: 72px;
+    width: 100%;
+    font-size: 18px;
+    color: #333333;
+    padding: 0px 50px 0px 50px;
+    border-width: 0.5px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding-left: 50px;
+}
+.imp :focus{
+    outline: none;
+    outline: 0.5px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    gap: 18px;
+}
+form button{
+    height: 72px;
+    background-color: #FFCA20;
+    margin-top: 24px;
+    font-size: 30px;
+    border: none;
+    font-family: "Noto Sans", sans-serif;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+form button:hover{
+    background-color: #f8be00;
+    cursor: grabbing;
+}
+.form-field{
+    position: relative;
+    width: 100%;
+    padding: 15px 15px 15px 50px; /* left space for icon */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    
+}
+.form-field .icon{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: #2b2b2b;
+}
+div.ourservices{
+    padding: 130px 170px;
+    font-family: "Noto Sans", sans-serif;
+    color: #333333;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: underline;
+    text-underline-offset: inherit;
+    text-decoration-color: #FFCA20;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 18px;
+}
+.titleUnderline {
+    width: 76px;
+    height: 2px;
+    margin-top: 5px;
+}
+div.services{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 80px;
+    max-width: 1000px;
+}
+.service1{
+    padding-top: 55px;
+    padding: 0px 170px;
+    font-family: "Noto Sans", sans-serif;
+    color: #333333;
+    font-size: 20px;
+    font-weight: 400;
+    transition: transform 0.2s;
+}
+.service1:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 0px rgba(0, 0 , 0, 0.1);
+}
+.services img{
+    height: 130px;
+    width: 180px;
+}
+.bookride{
+    padding: 130px 170px;
+    background-color: #f6f7f9;
+    color: #333333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+.bookride h2{
+    font-size: 40px;
+    text-underline-offset: 10px;
+}
+.bookride p{
+    padding-top: 45px;
+    font-size: 32px;
+    padding-bottom: 50px;
+    max-width: 460px;
+}
+.bookride button{
+    height: 60px;
+    width: 240px;
+    border-radius: 30px;
+    font-size: larger;
+    background-color: #1a202a;
+    color: white;
+    font-family: "Noto Sans", sans-serif;
+    padding-left: 50px;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+.bookride button:hover{
+    background-color: #2a2f38;
+}
+.imagegrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.imagegrid img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.5s;
+}
+.imagegrid img:hover{
+    transform: translateY(-15px);
+    box-shadow: 0px 0px 10px rgba(0, 0 , 0, 0.1);
+}
+.earnings{
+    padding: 130px 170px;
+    background-color: #f6f7f9;
+    color: #333333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+.earnings h2{
+    font-size: 40px;
+    text-underline-offset: 10px;
+}
+.earnings p{
+    padding-top: 45px;
+    font-size: 32px;
+    padding-bottom: 50px;
+    max-width: 400px;
+}
+.earnings button{
+    height: 60px;
+    width: 240px;
+    border-radius: 30px;
+    font-size: larger;
+    background-color: #1a202a;
+    color: white;
+    font-family: "Noto Sans", sans-serif;
+    padding-left: 50px;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;   
+}
+.earnings button:hover{
+    transform: translateY(-1px);
+    background-color: #2a2f38;
+}
+.imagegrid1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.imagegrid1 img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 2s;
+}
+.imagegrid1 img:hover{
+    cursor: pointer;
+    transform: rotateY(360deg);
+    box-shadow: 0px 0px 10px rgba(0, 0 , 0, 0.1);
+}
+.safety{
+    padding: 130px 170px;
+    background-color: #f6f7f9;
+    color: #333333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+.safety h2{
+    text-decoration: underline;
+    text-decoration-color: #FFCA20;
+    font-size: 40px;
+    text-underline-offset: 10px;
+}
+.safety p{
+    padding-top: 45px;
+    font-size: 32px;
+    padding-bottom: 50px;
+    max-width: 400px;
+}
+.imagegrid2 img{
+    height: 400px;
+    width: 600px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 1s;
+}
+.imagegrid2 img:hover{
+    transform: scaleX(-1);
+}
+.safety a{
+    font-size: 30px;
+}
+.download{
+    background-color: #000;
+    max-height: 375px;
+}
+.download h2{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #FFCA20;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+    color: white;
+    font-size: 45px;
+}
+.download img{
+    height: 85px;
+    width: 85px;
+    border-radius: 20px;
+    justify-content: center;
+}
+.logoname{
+    color: white;
+    max-width: 230px;
+    font-size: 28px;
+}
+.imagegrid3{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 30px;
+}
+.social{
+    text-align: center;
+    padding: 50px 80px;
+}
+.social img{
+    height: 85px;
+    width: 85px;
+    display: inline-flex;
+    justify-content: center;
+    gap: 100px;
+}
+.last{
+    padding: 50px 140px;
+    
+}
+.last img{
+    border-radius: 50px;
+}
+.last p{
+    padding-left: 30px;
+    padding-top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.rights{
+    padding: 50px 140px;
+}
+.rights p{
+    padding: 20px 140px;
+    color: #808080;
+}
